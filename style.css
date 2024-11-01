@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 0 249px;
+    background-size: cover;
+    background-image: url(./media/pexels-vladalex94-1402787\ \(1\).jpg);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+}
+
+.brand-name h3 {
+    font-size: 32px;
+    font-family: 'DM Serif Text', serif;
+}
+
+.menue {
+    display: flex;
+}
+
+.menue button {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin: 0 24px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.menue button:hover {
+    color: #0056b8;
+}
+
+.hero {
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin:  144px 0 40px 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.hero p {
+    font-size: 24px;
+    width: 800px;
+    
+    line-height: 32px;
+}
+
+.hero button {
+    background-color: #0031b8;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 24px 48px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 48px;
+    font-size: 16px;
+
+}
+
+.hero button:hover {
+    background-color: #3d71ff;
+
+}
+
+.search_section, .about_section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about_section {
+    background-color: #f1f1f1;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+.search_section {
+    background-color: white;
+    width: auto;
+    margin: -100px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.292);
+    grid-template-columns: 240px 240px 240px 200px;
+    row-gap: 32px;
+    grid-template-rows: auto;
+    padding: 40px 64px;
+    display: grid;
+}
+
+.form_item {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+   
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    font-family: sans-serif;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    color:#585858a9;
+    background-color: #b6b5b529;
+}
+.form_item_button {
+    
+    display: flex;
+    justify-content: center;
+    grid-row: span 2;
+    align-items: center;
+
+}
+#form-button {
+    background-color: #0031b8;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 56px;
+}
+#form_button:hover {
+    background-color: #3d71ff;
+}
+
+
+.about_section {
+    display: flex;
+    margin: 120px 200px 80px;
+    background-color: white;
+}
+.dealership, .repair, .insurance {
+    font-family: sans-serif;
+    border: solid rgb(187, 187, 187) 1px;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 64px 16px;
+    font-size: 16px;
+
+}
+h4 {
+    margin: 16px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 760px) {
+    main{
+        padding: 0;
+        background-position: center;
+    }
+    nav {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+    .menue {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menue button {
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        width: 70%;
+    }
+
+    .hero button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    main{
+        padding: 0;
+        background-position: center;
+    }
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}
